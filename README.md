@@ -8,18 +8,16 @@ A lightweight bash script that allows easy mirroring of projects to external git
 
 Simply fork this repository, as it has all the scripts necessary for performing mirrors. You can then add your repositories into the `assets/` directory. You will want to store them as such:
 
-```
-> repoA/
-    > bitbucket.config
-    > github.config
-    > gitlab.config
-    > someService.config
-    > REPO
-> repoB/
-    > ...
-> repoC/
-    > ...
-```
+    > repoA/
+        > bitbucket.config
+        > github.config
+        > gitlab.config
+        > someService.config
+        > REPO
+    > repoB/
+        > ...
+    > repoC/
+        > ...
 
 Each repositroy is its own directory. The `REPO` file is expected, and will contain only one variable, `SOURCE`. The source variable is used for retrieving the repository from the original source location. For each site, you can then create a `<site>.config` file that contains the following variables:
 
