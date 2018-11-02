@@ -9,14 +9,14 @@ function get_repository() {
 function mirror_repository() {
     dir="$1"
     
-    echo "INFO: Loading definition for repository at $1/REPO"
+    echo "INFO: Loading definition for repository at $dir/REPO"
     source "$dir/REPO"
     
     dir_bin="$DIR_BIN/$NAME"
     mkdir -p "$dir_bin"
     
     echo "INFO: Cloning source repository [$NAME @ $SOURCE] into $dir_bin"
-    git clone "$SOURCE" "$dir_bin"
+    git clone "ssh://$SOURCE" "$dir_bin"
 
     for mirror in "$dir"/*.config
     do
@@ -31,7 +31,7 @@ function mirror_repository() {
         (
             cd $dir_bin
             git remote add $MIRROR_NAME $MIRROR_SSH
-            git push --prune $MIRROR_NAME +refs/remotes/origin/*:refs/heads/* +refs/tags/*:refs/tags/*
+            git push --prune --force $MIRROR_NAME master
         )
         
     done
