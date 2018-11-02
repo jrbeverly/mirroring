@@ -1,0 +1,2 @@
+NAME=docker-plex
+SOURCE=git@git.jrbeverly.me:2222/jrbeverlylabs/dockerfiles/docker-plex.git

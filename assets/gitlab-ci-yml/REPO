@@ -1,0 +1,2 @@
+NAME=gitlab-ci-yml
+SOURCE=git@git.jrbeverly.me:2222/jrbeverlylabs/gitlab/gitlab-ci-yml.git

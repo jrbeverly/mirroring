@@ -1,0 +1,2 @@
+NAME=docker-optipng
+SOURCE=git@git.jrbeverly.me:2222/jrbeverlylabs/dockerfiles/docker-optipng.git

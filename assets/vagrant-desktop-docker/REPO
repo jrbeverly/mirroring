@@ -1,0 +1,2 @@
+NAME=vagrant-desktop-docker
+SOURCE=git@git.jrbeverly.me:2222/jrbeverlylabs/vagrant-desktop/vagrant-desktop-docker.git
