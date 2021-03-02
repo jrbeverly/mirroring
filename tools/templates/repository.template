@@ -1,10 +1,9 @@
 resource "gitlab_project" "example" {
-  name                       = "$${NAME}"
-  path                       = "$${PATH}"
-  description                = "$${NAME}"
+  name = ${GIT_NAME}
+  # path                       = ""
+  description                = ""
   visibility_level           = "public"
   tags                       = {}
-  default_branch             = "main"
   request_access_enabled     = false
   issues_enabled             = false
   merge_requests_enabled     = false
