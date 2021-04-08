@@ -1,0 +1,21 @@
+slug: mirroring
+description: A lightweight bash script that allows easy mirroring of projects to external git hosts.
+project: workbench
+namespace:
+status: archived
+icon: icon.svg
+license:
+  type: MIT
+  content: Jonathan Beverly <jrbeverly>
+  year: 2018
+topics: |-
+  [
+    "mirroring",
+    "git",
+    "backups",
+    "backup",
+    "backup-script",
+    "github",
+    "gitlab",
+    "mirrors"
+  ]
